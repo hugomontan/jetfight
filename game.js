@@ -172,7 +172,7 @@ class GameScene extends Phaser.Scene {
         // Criando o míssil
         let missile = this.missiles.create(xPosition, 0, 'missile'); 
         missile.setScale(0.15); 
-        missile.setVelocityY(600); 
+        missile.setVelocityY(400); 
         missile.setBodySize(missile.width * 0.5, missile.height * 0.5); 
     }
 

@@ -117,11 +117,11 @@ class GameScene extends Phaser.Scene {
 
         // Movendo o jato para a esquerda
         if (this.cursors.left.isDown) {
-            this.jet.setVelocityX(-500); 
+            this.jet.setVelocityX(-300); 
         } 
         // Movendo o jato para a direita
         else if (this.cursors.right.isDown) {
-            this.jet.setVelocityX(500); 
+            this.jet.setVelocityX(300); 
         } 
         // Parando o movimento horizontal
         else {
@@ -130,7 +130,7 @@ class GameScene extends Phaser.Scene {
 
         // Movendo o jato para cima e ativando a chama
         if (this.cursors.up.isDown) {
-            this.jet.setVelocityY(-1000); 
+            this.jet.setVelocityY(-5); 
             this.flame.setVisible(true); 
         } 
         // Desativando a chama
@@ -172,7 +172,7 @@ class GameScene extends Phaser.Scene {
         // Criando o míssil
         let missile = this.missiles.create(xPosition, 0, 'missile'); 
         missile.setScale(0.15); 
-        missile.setVelocityY(1000); 
+        missile.setVelocityY(600); 
         missile.setBodySize(missile.width * 0.5, missile.height * 0.5); 
     }
 

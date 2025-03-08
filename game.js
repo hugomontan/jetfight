@@ -130,7 +130,7 @@ class GameScene extends Phaser.Scene {
 
         // Movendo o jato para cima e ativando a chama
         if (this.cursors.up.isDown) {
-            this.jet.setVelocityY(-5); 
+            this.jet.setVelocityY(-500); 
             this.flame.setVisible(true); 
         } 
         // Desativando a chama
